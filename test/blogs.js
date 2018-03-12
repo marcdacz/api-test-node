@@ -1,10 +1,3 @@
-let chai = require('chai');
-let chaiHttp = require('chai-http');
-let should = chai.should();
-let server = 'https://jsonplaceholder.typicode.com';
-
-chai.use(chaiHttp);
-
 describe('Blogs Tests', () => {
 	it('GET /posts', (done) => {
 		chai.request(server)
